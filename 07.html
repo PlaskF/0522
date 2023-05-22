@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function eventbutton() {
+            var BGRbutton = document.getElementById("BGRbutton")
+            var Originbutton = document.getElementById("Originbutton")
+
+            BGRbutton.onclick = function(){
+                document.body.style.background = "Orange"
+            }
+            Originbutton.onclick = function(){
+                document.body.style.background = "White"
+            }
+
+        // function backBGR() {
+        //     document.body.background = "Orange"
+        // }
+        // function Originbutton() {
+        //     document.body.background = "White"
+        }
+    </script>
+</head>
+<body onload="eventbutton()">
+    <button id="BGRbutton">배경색 변환</button>
+    <button id="Originbutton">원상복귀</button>
+</body>
+</html>
