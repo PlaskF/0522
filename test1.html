@@ -19,13 +19,13 @@
 </head>
 <body>
     <form action="">
-        <select id="fruit">
+        <select id="fruit" onchange="changeImg()">
             <option value="imgs/apple.jpg">Apple</option>
             <option value="imgs/pear.jpg">Pear</option>
             <option value="imgs/kiwi.jpg">Kiwi</option>
             <option value="imgs/orange.jpg">Orange</option>
         </select>
-        <button id = "btn" onclick="changeImg()" type="button">과일선택후 클릭</button>
+        <!-- <button id = "btn" onclick="changeImg()" type="button">과일선택후 클릭</button> -->
         <br>
         <img id="imgFruit" src="imgs/apple.jpg">
     </form>
