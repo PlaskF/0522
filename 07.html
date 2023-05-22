@@ -10,18 +10,16 @@
             var BGRbutton = document.getElementById("BGRbutton")
             var Originbutton = document.getElementById("Originbutton")
 
-            BGRbutton.onclick = function(){
-                document.body.style.background = "Orange"
-            }
-            Originbutton.onclick = function(){
-                document.body.style.background = "White"
-            }
-
-        // function backBGR() {
-        //     document.body.background = "Orange"
-        // }
-        // function Originbutton() {
-        //     document.body.background = "White"
+            BGRbutton.onclick = backBGR
+            
+            Originbutton.onclick = OriginBGR
+            
+        }
+        function backBGR() {
+            document.body.style.background = "Orange"
+        }
+        function OriginBGR() {
+            document.body.style.background = "White"
         }
     </script>
 </head>
