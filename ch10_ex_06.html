@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // text 함수로 정의하여 element 속성을 출력하게 하였다.
+        function text() {
+            var element =document.getElementById('element')
+            element.style.color = 'red'
+            element.innerHTML = 'From JavaScript'
+        }
+        
+    </script>
+</head>
+<body onload="text()">
+    <!-- body에 함수 호출 -->
+    <h1 id="element">Lorem ipsum dolor amet</h1>
+</body>
+</html>
