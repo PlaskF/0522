@@ -7,22 +7,25 @@
     <title>Document</title>
     <script>
         // 문서 객체 추가
-        var out = ""
+        var out = ''
         function divTest() 
         {
-            for (var i = 0; i < 256; i++) 
+            for (var i = 0; i < 256; i++)
                 out += "<div></div>"
-
+            
             document.body.innerHTML = out
-        }
-        var divArr = document.querySelectorAll("div")
-        for (var i = 0; i < divArr.length; i++)
-        {
+
+            var divArr = document.querySelectorAll("div")
+            for (var i = 0; i < divArr.length; i++)
+            {
             // 변수 선언
             var div = divArr[i];
             div.style.height = "2px"
-            div.style.backgroundColor = "rgb( "+ (255-i)+", "+i+", "+i+")"              
-        }       
+            div.style.backgroundColor = "rgb(" +(255-i)+ ", " +i+ ", " +i+ ")"              
+            } 
+        }
+        
+              
     </script>
 </head>
 <body onload="divTest()">
